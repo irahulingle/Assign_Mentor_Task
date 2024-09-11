@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentor-Student Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Mentor-Student Management</h1>
+
+  <!-- Create Mentor -->
+  <h2>Create Mentor</h2>
+  <input type="text" id="mentorName" placeholder="Mentor Name">
+  <button onclick="createMentor()">Create Mentor</button>
+
+  <!-- Create Student -->
+  <h2>Create Student</h2>
+  <input type="text" id="studentName" placeholder="Student Name">
+  <button onclick="createStudent()">Create Student</button>
+
+  <!-- Assign Mentor -->
+  <h2>Assign Mentor to Student</h2>
+  <input type="text" id="studentId" placeholder="Student ID">
+  <input type="text" id="mentorId" placeholder="Mentor ID">
+  <button onclick="assignMentor()">Assign Mentor</button>
+
+  <!-- Get Students by Mentor -->
+  <h2>Get Students Assigned to Mentor</h2>
+  <input type="text" id="mentorIdForStudents" placeholder="Mentor ID">
+  <button onclick="getStudentsByMentor()">Get Students</button>
+
+  <h3>Results:</h3>
+  <pre id="results"></pre>
+
+  <script src="app.js"></script>
+</body>
+</html>
